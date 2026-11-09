@@ -4,8 +4,11 @@
     padding: 0;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
-    color: aliceblue ;
-    
+    color: aliceblue;
+}
+
+body{
+    background-color: #0b090d;
 }
 
 a{
@@ -18,7 +21,9 @@ ul, ol{
 }
 
 .container{
-    width: 1320px;
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 /* All css part end here */
@@ -31,7 +36,6 @@ ul, ol{
     left: 0;
     width: 100%;
     z-index: 1;
-
 }
 
 .navbar_content{
@@ -46,19 +50,19 @@ ul, ol{
     gap: 31px;
     margin-right: 454px;
     margin-bottom: 9px;
-
 }
 
 .navbar_content .logo{
     padding-top: 25px;
     padding-bottom: 32px;
 }
-.navbar_content .global_button {
+
+.navbar_content .global_button{
     margin-right: 25.6px;
     margin-bottom: 9px;
 }
 
-.navbar_content .sign_button {
+.navbar_content .sign_button{
     margin-right: 27px;
     display: flex;
     align-items: center;
@@ -70,12 +74,11 @@ ul, ol{
 .navbar_content .search_button{
     margin-bottom: 9px;
 }
-.sign_button .logo a i {
-   
-    font-size: 12px;
-    margin-top: 15px ;
-}
 
+.sign_button .logo a i{
+    font-size: 12px;
+    margin-top: 15px;
+}
 /* nav part end here */
 
 /* banner part start here */
@@ -83,39 +86,25 @@ ul, ol{
     background-color: #0b090d;
     background-image: url("../imges/banner/banner_background.svg");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    background-position: center bottom;
+    background-size: cover;
     position: relative;
-    padding-top: 21vw;
-    padding-bottom: 21vw;
+    padding-top: 180px;
+    padding-bottom: 80px;
+    min-height: 100vh;
 }
 
 .banner_content .text_part h3{
     font-weight: 400;
     font-size: 27px;
     letter-spacing: 6px;
-   
-   
-}
-
-.banner_content .text_part h1{
-    font-weight: 700;
-    font-size: 60px;
-}
-
-.banner_content .text_part p{
-    font-weight: 400;
-    font-size: 16px;
-    width: 521px;
-    margin-top: 5px;
-    margin-bottom: 48px;
 }
 
 .banner_content .text_part h1{
     font-weight: 700;
     font-size: 60px;
     display: flex;
-    align-items: flex-end;   /* line ke niche align kore */
+    align-items: flex-end;
     gap: 20px;
 }
 
@@ -124,17 +113,32 @@ ul, ol{
     width: 80px;
     height: 3px;
     background: #fff;
-    margin-bottom: 12px;     /* line ta kototuku upore uthbe, eta adjust koro */
+    margin-bottom: 12px;
+}
+
+.banner_content .text_part p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 521px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 48px;
 }
 
 .viewMore_button{
     padding: 13px 20px 13px 25px;
     background-color: #FFFFFF;
-    color:#121212 ;
+    color: #121212;
     display: inline-block;
-    margin-bottom: 301px;
+    margin-bottom: 60px;
 }
-.viewMore_button a {
+
+.viewMore_button a,
+.viewMore_button a *{
+    color: #121212;
+}
+
+.viewMore_button a{
     margin-right: 20.23px;
     margin-left: 10px;
 }
@@ -148,39 +152,11 @@ ul, ol{
     flex-direction: row;
     gap: 20px;
 }
-
 /* banner part end here */
 
-
-
-
-
-/* nav part start here */
-
-/* nav  part end here */
-/* nav part start here */
-
-/* nav  part end here */
-/* nav part start here */
-
-/* nav  part end here */
-/* nav part start here */
-
-/* nav  part end here */
-/* nav part start here */
-
-/* nav  part end here */
-/* nav part start here */
-
-/* nav  part end here */
-
-
-
-
-
-
-
-
-
-
-
+/* about part start here */
+.about_section{
+    background-color: #0b090d;
+    padding: 80px 0;
+}
+/* about part end here */
