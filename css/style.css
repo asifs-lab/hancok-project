@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
-    color: aliceblue;
+    /* color: aliceblue; */
 }
 
 body{
@@ -43,23 +43,36 @@ ul, ol{
     align-items: center;
 }
 
-.menu_button ul{
+.menu_button ul {
     display: flex;
     flex-direction: row;
     margin-left: 60px;
     gap: 31px;
     margin-right: 454px;
     margin-bottom: 9px;
+    color: #FFFFFF;
+}
+
+.social_button:hover,
+.navbar_content .logo:hover,
+.navbar_content .global_button:hover,
+.navbar_content .sign_button:hover,
+.navbar_content .search_button:hover,
+.menu_button ul a:hover {
+    color: #ff3b4e;
+    transition: all 0.3s ease;
 }
 
 .navbar_content .logo{
     padding-top: 25px;
     padding-bottom: 32px;
+    color: #FFFFFF
 }
 
 .navbar_content .global_button{
     margin-right: 25.6px;
     margin-bottom: 9px;
+    color: #FFFFFF
 }
 
 .navbar_content .sign_button{
@@ -69,10 +82,12 @@ ul, ol{
     justify-content: center;
     gap: 7.39px;
     margin-bottom: 9px;
+    color: #FFFFFF
 }
 
 .navbar_content .search_button{
     margin-bottom: 9px;
+    color: #FFFFFF
 }
 
 .sign_button .logo a i{
@@ -253,6 +268,7 @@ ul, ol{
     font-size: 27px;
     letter-spacing: 3%;
     margin-bottom: 7px;
+    color: #FFFFFF;
 }
 
 .rigth_part h4 i{
@@ -265,6 +281,7 @@ ul, ol{
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
     font-size: 14px;
+    color: #FFFFFF;
 }
 
 .rigth_part p{
@@ -272,6 +289,7 @@ ul, ol{
     font-size: 16px;
     width: 467px;
     margin-bottom: 25px;
+    color: #FFFFFF;
 }
 
 .catalog_part{
@@ -320,6 +338,4 @@ ul, ol{
     letter-spacing: 2%;      
     color: #FFFFFF;
 }
-
-
 /* about part end here */
