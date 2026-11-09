@@ -1,0 +1,186 @@
+/* All css part start here */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    box-sizing: border-box;
+    color: aliceblue ;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* All css part end here */
+
+/* nav part start here */
+#navbar{
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.navbar_content{
+    display: flex;
+    align-items: center;
+}
+
+.menu_button ul{
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    gap: 31px;
+    margin-right: 454px;
+    margin-bottom: 9px;
+
+}
+
+.navbar_content .logo{
+    padding-top: 25px;
+    padding-bottom: 32px;
+}
+.navbar_content .global_button {
+    margin-right: 25.6px;
+    margin-bottom: 9px;
+}
+
+.navbar_content .sign_button {
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7.39px;
+    margin-bottom: 9px;
+}
+
+.navbar_content .search_button{
+    margin-bottom: 9px;
+}
+.sign_button .logo a i {
+   
+    font-size: 12px;
+    margin-top: 15px ;
+}
+
+/* nav part end here */
+
+/* banner part start here */
+#banner_section{
+    background-color: #0b090d;
+    background-image: url("../imges/banner/banner_background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    padding-top: 21vw;
+    padding-bottom: 21vw;
+}
+
+.banner_content .text_part h3{
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: 6px;
+   
+   
+}
+
+.banner_content .text_part h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.banner_content .text_part p{
+    font-weight: 400;
+    font-size: 16px;
+    width: 521px;
+    margin-top: 5px;
+    margin-bottom: 48px;
+}
+
+.banner_content .text_part h1{
+    font-weight: 700;
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;   /* line ke niche align kore */
+    gap: 20px;
+}
+
+.banner_content .text_part h1::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 12px;     /* line ta kototuku upore uthbe, eta adjust koro */
+}
+
+.viewMore_button{
+    padding: 13px 20px 13px 25px;
+    background-color: #FFFFFF;
+    color:#121212 ;
+    display: inline-block;
+    margin-bottom: 301px;
+}
+.viewMore_button a {
+    margin-right: 20.23px;
+    margin-left: 10px;
+}
+
+.viewMore_button a img{
+    margin-left: 10px;
+}
+
+.social_button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* banner part end here */
+
+
+
+
+
+/* nav part start here */
+
+/* nav  part end here */
+/* nav part start here */
+
+/* nav  part end here */
+/* nav part start here */
+
+/* nav  part end here */
+/* nav part start here */
+
+/* nav  part end here */
+/* nav part start here */
+
+/* nav  part end here */
+/* nav part start here */
+
+/* nav  part end here */
+
+
+
+
+
+
+
+
+
+
+
