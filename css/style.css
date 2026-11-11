@@ -4,7 +4,7 @@
     padding: 0;
     font-family: "Oswald", sans-serif;
     box-sizing: border-box;
-    /* color: aliceblue; */
+    color: aliceblue;
 }
 
 body{
@@ -28,7 +28,7 @@ ul, ol{
 }
 /* All css part end here */
 
-/* nav part start here */
+/* nav part start here ****************************************/
 #navbar{
     background: transparent;
     position: absolute;
@@ -53,11 +53,13 @@ ul, ol{
     color: #FFFFFF;
 }
 
-.social_button:hover,
+
+
 .navbar_content .logo:hover,
-.navbar_content .global_button:hover,
-.navbar_content .sign_button:hover,
-.navbar_content .search_button:hover,
+.navbar_content .global_button a i:hover,
+.navbar_content .sign_button .logo a i:hover,
+.navbar_content .search_button a i:hover,
+.navbar_content .text a:hover,
 .menu_button ul a:hover {
     color: #ff3b4e;
     transition: all 0.3s ease;
@@ -94,9 +96,9 @@ ul, ol{
     font-size: 12px;
     margin-top: 15px;
 }
-/* nav part end here */
+/* nav part end here ****************************************/
 
-/* banner part start here */
+/* banner part start here ****************************************/
 #banner_section{
     background-color: #0b090d;
     position: relative;
@@ -196,11 +198,11 @@ ul, ol{
 
 
 
-/* banner part end here */
+/* banner part end here *************************************** */
 
-/* about part start here */
+/* about part start here *************************************** */
 #about{
-    background-color: #0b090d;
+    background-color: #121212;
     padding-top: 34px;
     padding-bottom: 80px;
 }
@@ -231,7 +233,6 @@ ul, ol{
     display: flex;
     padding-top: 57px;
     padding-bottom: 50px;
-    
     gap: 82px;
 }
 
@@ -338,4 +339,366 @@ ul, ol{
     letter-spacing: 2%;      
     color: #FFFFFF;
 }
+/* about part end here ****************************************/
+
+/* popular game part start here ****************************************/
+#popular_game{
+    background-color: #191919;
+    padding-top: 115px;
+    padding-bottom: 90px;
+}
+
+.popular_game_content h2{
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    width: 525px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-left: auto; 
+    margin-bottom: 10px; 
+}
+
+.line{
+    display: inline-block;
+    width: 120px;
+    height: 3px;
+    background: #FF4655; 
+    margin-bottom: 0px; 
+
+}
+
+.popular_game_content .card {
+    display: flex;
+    align-items: flex-end;   
+    justify-content: center;
+    gap: 19px;
+}
+
+.popular_game_content .card .left,
+.popular_game_content .card .right {
+    flex: 1;
+}
+
+.popular_game_content .card img {
+    width: 100%;
+    height: auto;            
+    display: block;
+}
+
+.popular_game_button {
+    display: flex;
+    position: relative;
+}
+
+.popular_game_button .button1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right: 0px;
+    bottom: -597px
+}
+
+.popular_game_button .button2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right: 0px;
+    bottom: -655px;
+}
+.popular_game_button .button1:hover,
+.popular_game_button .button2:hover{
+    border: 1px solid #ff3b4e;
+    transition: all 0.3s ease;
+}
+
+/* popular game part end here ****************************************/
+
+
+/* Live Stream part start here ****************************************/
+#live_stream{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.live_stream_part .text_part h2{
+    width: 446px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+}
+
+.video_part{
+    margin-top: 69px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.video_part .video1{
+    position: relative;
+    width: 427px;
+    height: 296px;
+    display: flex;
+    transition: transform 0.3s ease;  
+}
+
+
+.video_part .video1:hover{
+    transform: translateY(-10px);     
+}
+
+
+.video_part .video1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../imges/livestream/liveStream1.svg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    z-index: 0;
+}
+
+
+.video_part .video1:hover::before{
+    filter: grayscale(0%);
+}
+
+
+.video_part .video1 > *{
+    position: relative;
+    z-index: 1;
+}
+
+.video_part .video1 h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 230px;
+    margin-left: 23px;
+    width: 167px; 
+}
+
+.video_part .video1 h4{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+
+.video_part .video1 .live img{
+    margin-top: 257px;
+    margin-left: 182px;
+}
+
+.video_part .video1 .playbutton img{
+    margin-top: 116px;
+    margin-left: -232px;
+}
+
+.video_part .video2{
+    position: relative;
+    width: 427px;
+    height: 296px;
+    display: flex;
+    transition: transform 0.3s ease;   
+}
+
+
+.video_part .video2:hover{
+    transform: translateY(-10px);     
+}
+
+
+.video_part .video2::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../imges/livestream/liveStream2.svg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    z-index: 0;
+}
+
+
+.video_part .video2:hover::before{
+    filter: grayscale(0%);
+}
+
+
+.video_part .video2 > *{
+    position: relative;
+    z-index: 1;
+}
+
+.video_part .video2 h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 230px;
+    margin-left: 23px;
+    width: 167px; 
+}
+
+.video_part .video2 h4{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+
+.video_part .video2 .live img{
+    margin-top: 257px;
+    margin-left: 182px;
+}
+
+.video_part .video2 .playbutton img{
+    margin-top: 116px;
+    margin-left: -232px;
+}
+
+
+.video_part .video3{
+    position: relative;
+    width: 427px;
+    height: 296px;
+    display: flex;
+    transition: transform 0.3s ease;   
+}
+
+
+.video_part .video3:hover{
+    transform: translateY(-10px);      
+}
+
+
+.video_part .video3::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../imges/livestream/liveStream3.svg);
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    z-index: 0;
+}
+
+/* hover korle color asbe */
+.video_part .video3:hover::before{
+    filter: grayscale(0%);
+}
+
+/* bhitorer shob content background er upore thakbe */
+.video_part .video3 > *{
+    position: relative;
+    z-index: 1;
+}
+
+.video_part .video3 h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 230px;
+    margin-left: 23px;
+    width: 167px; 
+}
+
+.video_part .video3 h4{
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: 23px;
+}
+
+.video_part .video3 .live img{
+    margin-top: 257px;
+    margin-left: 182px;
+}
+
+.video_part .video3 .playbutton img{
+    margin-top: 116px;
+    margin-left: -232px;
+}
+
+.live_stream_part .text2 h3{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.matchOne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+} 
+    
+.matchOne .time h2{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 15%;
+}
+
+.matchtwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+    
+.matchtwo .time h2{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 15%;
+}
+
+/* Live Stream part end here *************************************** */
+
+
+
+
+
+
+/* about part start here */
+/* about part end here */
+/* about part start here */
+/* about part end here */
+/* about part start here */
+/* about part end here */
+/* about part start here */
+/* about part end here */
+/* about part start here */
+/* about part end here */
+/* about part start here */
 /* about part end here */
